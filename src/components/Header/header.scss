@@ -1,0 +1,15 @@
+@import '../scss/variable.scss';
+
+.header {
+    background: linear-gradient($gradient-first-color, $gradient-second-color);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+
+    &__title {
+        color: white;
+        font-weight: normal;
+    }
+}

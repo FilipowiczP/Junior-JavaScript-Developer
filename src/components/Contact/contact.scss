@@ -1,0 +1,29 @@
+@import '../scss/variable.scss';
+
+.contact {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    background-color: $background;
+    border-bottom: 1px solid $border;
+    padding: 10px;
+
+    &__avatar {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border: 1px solid $border;
+        border-radius: 50%;
+    }
+
+    &__name {
+        grid-column: 2/3;
+        font-weight: bold;
+    }
+
+    &__email {
+        grid-column: 2/3;
+        color: $email;
+    }
+}
